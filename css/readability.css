@@ -1,39 +1,120 @@
 @font-face {
-    font-family: 'Merriweather';
-    src: url('merriweather-regular-webfont.woff2') format('woff2'),
-         url('merriweather-regular-webfont.woff') format('woff');
+    font-family: 'Linux Libertine'; /* normal */
+    src: url('fonts/LinLibertine_R.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Merriweather';
-    src: url('merriweather-bold-webfont.woff2') format('woff2'),
-         url('merriweather-bold-webfont.woff') format('woff');
+    font-family: 'Linux Libertine'; /* italic */
+    src: url('fonts/LinLibertine_RI.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Linux Libertine'; /* bold */
+    src: url('fonts/LinLibertine_RB.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Merriweather';
-    src: url('merriweather-italic-webfont.woff2') format('woff2'),
-         url('merriweather-italic-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Linux Libertine'; /* bold italic */
+    src: url('fonts/LinLibertine_RBI.woff') format('woff');
+    font-weight: bold;
     font-style: italic;
 }
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 137.5%;
+
+    font-family: 'Linux Libertine', 'Merriweather', serif;
+    color: rgb(51, 51, 51);
+}
+
+/* Copy & Lists */
+p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+ul li, ol li {
+  line-height: 1.5rem;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  /* Change heading typefaces here */
+  font-family: sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+}
+h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+h3 {
+  font-size: 1.414rem;
+}
+h4 {
+  font-size: 0.707rem;
+}
+h5 {
+  font-size: 0.4713333333333333rem;
+}
+h6 {
+  font-size: 0.3535rem;
+}
+/* Tables */
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+table td, table th {
+  padding: 0;
+  line-height: 33px;
+}
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}
+
+/* Page size */
 
 body {
     width: 650px;
     margin: auto;
-    font-family: 'Merriweather', serif;
-    color: rgb(51, 51, 51);
-    font-size: 1.2em;
-    line-height: 1.5em;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     width: 800px;
-    line-height: 1.5em;
 }
 
 a {
