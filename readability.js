@@ -360,7 +360,7 @@ var readability = {
             curTitle = origTitle;
         }
 
-        var articleTitle = document.createElement("H1");
+        var articleTitle = document.createElement("h1");
         articleTitle.innerHTML = curTitle;
 
         return articleTitle;
@@ -372,9 +372,9 @@ var readability = {
      * @return void
      **/
     getArticleFooter: function () {
-        var articleFooter = document.createElement("DIV");
+        var articleFooter = document.createElement("div");
         articleFooter.id = "readFooter";
-        articleFooter.innerHTML = "<div id='rdb-footer-print'>Excerpted from <cite>" + document.title + "</cite><br />" + window.location.href + "</div>";
+        articleFooter.innerHTML = "<div id='rdb-footer-print'>Excerpted from <cite>" + document.title + "</cite><br><a href=\"" + window.location.href + "\">" + window.location.href + "</a></div>";
         return articleFooter;
     },
 
@@ -477,7 +477,7 @@ var readability = {
             articleFootnotes = document.getElementById('readability-footnotes-list');
 
         if(!footnotesWrapper) {
-            footnotesWrapper               = document.createElement("DIV");
+            footnotesWrapper               = document.createElement("div");
             footnotesWrapper.id            = 'readability-footnotes';
             footnotesWrapper.innerHTML     = '<h3>References</h3>';
             footnotesWrapper.style.display = 'none'; /* Until we know we have footnotes, don't show the references block. */
@@ -852,9 +852,9 @@ var readability = {
          * If we still have no top candidate, just use the body as a last resort.
          * We also have to copy the body node so it is something we can modify.
          **/
-        if (topCandidate === null || topCandidate.tagName === "BODY")
+        if (topCandidate === null || topCandidate.tagName === "body")
         {
-            topCandidate = document.createElement("DIV");
+            topCandidate = document.createElement("div");
             topCandidate.innerHTML = page.innerHTML;
             page.innerHTML = "";
             page.appendChild(topCandidate);
@@ -865,7 +865,7 @@ var readability = {
          * Now that we have the top candidate, look through its siblings for content that might also be related.
          * Things like preambles, content split by ads that we removed, etc.
         **/
-        var articleContent        = document.createElement("DIV");
+        var articleContent        = document.createElement("div");
         if (isPaging) {
             articleContent.id     = "readability-content";
         }
@@ -927,7 +927,7 @@ var readability = {
                     /* We have a node that isn't a common block level element, like a form or td tag. Turn it into a div so it doesn't get filtered out later by accident. */
 
                     dbg("Altering siblingNode of " + siblingNode.nodeName + ' to div.');
-                    nodeToAppend = document.createElement("DIV");
+                    nodeToAppend = document.createElement("div");
                     try {
                         nodeToAppend.id = siblingNode.id;
                         nodeToAppend.innerHTML = siblingNode.innerHTML;
@@ -1394,7 +1394,7 @@ var readability = {
     appendNextPage: function (nextPageLink) {
         readability.curPageNum+=1;
 
-        var articlePage       = document.createElement("DIV");
+        var articlePage       = document.createElement("div");
         articlePage.id        = 'readability-page-' + readability.curPageNum;
         articlePage.className = 'page';
         articlePage.innerHTML = '<p class="page-separator" title="Page ' + readability.curPageNum + '">&sect;</p>';
@@ -1429,7 +1429,7 @@ var readability = {
                     }
 
                     // TODO: this ends up doubling up page numbers on NYTimes articles. Need to generically parse those away.
-                    var page = document.createElement("DIV");
+                    var page = document.createElement("div");
 
                     /**
                      * Do some preprocessing to our HTML to make it ready for appending.

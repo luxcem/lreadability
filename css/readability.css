@@ -1,38 +1,48 @@
 @font-face {
-    font-family: 'Linux Libertine'; /* normal */
-    src: url('fonts/LinLibertine_R.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Linux Libertine'; /* normal */
+  src: url('fonts/LinLibertine_R.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Linux Libertine'; /* italic */
-    src: url('fonts/LinLibertine_RI.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
+  font-family: 'Linux Libertine'; /* italic */
+  src: url('fonts/LinLibertine_RI.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Linux Libertine'; /* bold */
-    src: url('fonts/LinLibertine_RB.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Linux Libertine'; /* bold */
+  src: url('fonts/LinLibertine_RB.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Linux Libertine'; /* bold italic */
-    src: url('fonts/LinLibertine_RBI.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
+  font-family: 'Linux Libertine'; /* bold italic */
+  src: url('fonts/LinLibertine_RBI.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
 }
 
 html {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-size: 137.5%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  font-size: 137.5%;
 
-    font-family: 'Linux Libertine', 'Merriweather', serif;
-    color: rgb(51, 51, 51);
+  font-family: 'Linux Libertine', 'Merriweather', serif;
+  color: rgb(51, 51, 51);
+}
+
+* {
+  background-color: white !important;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Copy & Lists */
@@ -68,16 +78,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5rem;
   margin-bottom: 0;
   line-height: 1.5rem;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 h1 {
-  font-size: 4.242rem;
-  line-height: 4.5rem;
-  margin-top: 3rem;
+  font-size: 2.618rem
+  margin-top: 2rem;
 }
 h2 {
-  font-size: 2.828rem;
-  line-height: 3rem;
-  margin-top: 3rem;
+  font-size: 2.121rem;
+  margin-top: 2rem;
 }
 h3 {
   font-size: 1.414rem;
@@ -108,16 +121,16 @@ code {
 
 /* Page size */
 
-body {
-    width: 650px;
-    margin: auto;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    width: 800px;
+#readability-content {
+  width: 700px;
+  margin: auto;
 }
 
 a {
-    color: rgb(190, 46, 13);
-    text-decoration: none;
+  color: rgb(190, 46, 13);
+  text-decoration: none;
+}
+
+#readFooter {
+  margin-top: 2rem;
 }
