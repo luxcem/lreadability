@@ -5,8 +5,13 @@
     "background" : {
         "scripts" : ["background.js"]
     },
+    "icons": {
+        "16": "img/icon-16.png",
+        "48": "img/icon-48.png",
+        "128": "img/icon1-28.png"
+    },
     "browser_action": {
-        "default_icon": "logo.png"
+        "default_icon": "img/icon-128.png"
     },
     "web_accessible_resources": [
         "css/*"

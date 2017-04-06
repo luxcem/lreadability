@@ -17,6 +17,7 @@ Thanks to :
 - [Linux Libertine](http://www.linuxlibertine.org/) font from (GNU GPL
   and SIL Open Font License)
 - Readability.js from Arc90 (Apache License, Version 2.0)
+- Icon from [MCruz_(WMF)](https://commons.wikimedia.org/wiki/User:MCruz_(WMF)) (CC-SA)
 
 This derivated work is placed under the condition of the GNU GPLv3
 Licence
